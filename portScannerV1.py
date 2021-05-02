@@ -10,10 +10,15 @@ import socket
 import subprocess
 import sys
 from datetime import datetime
+import platform
 
 #----------------------------------------
 #Cleaning of screen
-#subprocess.call("clear", shell=True)
+if platform.system() == "Windows":
+    subprocess.call('cls', shell=True)
+else:
+    subprocess.call('clear', shell=True)
+
 
 #Ask for input
 remoteServer   = str(input("Enter with remote host for scan: "))
@@ -62,16 +67,3 @@ total = t2 - t1
 #Printing information of scanner in screen
 
 print("Scanning complete in: ", total)
-
-
-
-
-
-
-
-
-
-
-
-
-
