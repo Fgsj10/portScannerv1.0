@@ -8,5 +8,8 @@ import datetime
 
 
 #Creating variable with data now
-dataNow = datetime.datetime.now()
+dateNow = datetime.datetime.now()
 
+
+#Printing date
+print(dateNow.strftime("%Y-%m-%d"))
