@@ -32,7 +32,7 @@ print("Please wait, scanning remote host", remoteServerIP)
 print("-") * 60 #Why equal question
 
 #Checking of time of scanning
-t1 = datetime.now();
+t1 = datetime.now()
 
 
 #using try and catch for treatment exception
@@ -57,7 +57,7 @@ except socket.error:
     sys.exit()
 
 #Checking time again 
-t2 = datetime.now();
+t2 = datetime.now()
 
 
 #Calculating total time
